@@ -23,6 +23,8 @@ int print_board(char map[][100], int x, int y) {
 
 
 int main(void) {
+
+    srand (time(NULL));
     int sizex = 100;
     int sizey = 30;
 
@@ -62,7 +64,7 @@ int main(void) {
         std::cin >> vx;
         std::cout << "vy: ";
         std::cin >> vy;
-        std::cout << "Fire, when ready...";
+        std::cout << "Fire, when ready..." << std::endl;
         std::cin.get(temp);
 
         int pos_x, pos_y;
